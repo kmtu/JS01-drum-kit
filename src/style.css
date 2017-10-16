@@ -1,0 +1,14 @@
+.drum-wrapper {
+  margin: auto;
+  width: 50%;
+}
+
+.drum {
+  color: blue;
+  width: 4.5em;
+  height: 4em;
+  display: inline-block;
+  background-color: orange;
+  margin: 0.2em;
+  padding: 1em 0 0 0.5em;
+}

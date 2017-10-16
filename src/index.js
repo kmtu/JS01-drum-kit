@@ -8,6 +8,7 @@ import snare from './sounds/snare.wav';
 import tink from './sounds/tink.wav';
 import tom from './sounds/tom.wav';
 import drum from './drum.js';
+import './style.css';
 
 let drumkits = [
   {label: 'Boom!', src: boom},
@@ -21,7 +22,10 @@ let drumkits = [
   {label: 'Tom!', src: tom}
 ];
 
+let drumWrapper = document.createElement('div');
+drumWrapper.classList.add('drum-wrapper');
 for (let drumkit of drumkits) {
-  document.body.appendChild(drum(drumkit.label, drumkit.src));
+  drumWrapper.appendChild(drum(drumkit.label, drumkit.src));
 }
+document.body.appendChild(drumWrapper);
 
