@@ -8,7 +8,10 @@ export default function drum(name, src) {
   sound.src = src;
 
   element.appendChild(sound);
-  element.addEventListener('click', () => sound.play());
+  element.addEventListener('click', () => {
+    sound.currentTime = 0;
+    sound.play();
+  });
   return element;
 };
 
