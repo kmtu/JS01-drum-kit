@@ -22,10 +22,13 @@ let drumkits = [
   {label: 'Tom!', src: tom}
 ];
 
+let container = document.createElement('div');
 let drumWrapper = document.createElement('div');
+container.classList.add('container');
 drumWrapper.classList.add('drum-wrapper');
 for (let drumkit of drumkits) {
   drumWrapper.appendChild(drum(drumkit.label, drumkit.src));
 }
-document.body.appendChild(drumWrapper);
+container.appendChild(drumWrapper);
+document.body.appendChild(container);
 
