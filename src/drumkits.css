@@ -1,0 +1,9 @@
+.drumkits {
+  display: flex;
+  width: 80vmin;
+  height: 80vmin;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+

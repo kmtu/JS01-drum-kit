@@ -1,8 +1,10 @@
+import styles from './drum.css';
+
 export default function drum(name, src) {
   let element = document.createElement('div');
   let sound = document.createElement('audio');
 
-  element.classList.add('drum');
+  element.classList.add(styles.drum);
   element.textContent = name;
   
   sound.src = src;

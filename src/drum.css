@@ -1,0 +1,12 @@
+.drum {
+  width: 30%;
+  height: 30%;
+  border: 1vmin solid;
+  border-radius: 50%;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 5vmin;
+}
+
